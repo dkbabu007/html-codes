@@ -6,10 +6,8 @@
 <title>My first Webpage</title>
 
 <style>
-.container{display:flex;
-flex-wrap:wrap;}
 
-.container>body{ 
+body{ 
 
 background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fca5f1), to(#b5ffff)); }
 
@@ -24,10 +22,16 @@ padding:40px,50px;
 font-size:30px;
 
 background-color:pink;
+       
+}
 
 }
 
-p{ font-family:Sans-serif;
+p{ .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+  font-family:Sans-serif;
 
 color:lightblue;
 
@@ -43,12 +47,11 @@ font-size:20px;
   </head>
 
   <body>
-<div class="container">
 
   <h1>Hello World!</h1>
 
     <p>hello there, this is my first webpage</p>
-</div>
+
 
   </body>
 
